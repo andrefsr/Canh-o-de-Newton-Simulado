@@ -1,10 +1,5 @@
+Web VPython 3.2
 from vpython import *
-
-### Próximos passos
-# Implementar botão de reset e de limpar trails
-# Implementar calculadora de velocidade terminal
-# Estudar o que o efeito coriolis faria sobre o projétil
-
 
 ### Cena
 scene.background = vector(0.8784313725490196,0.8274509803921568,0.6705882352941176)
@@ -124,7 +119,6 @@ def velscape(wi):
     hvscape = Re + hin
     def f(v):
         fg = (G*ms*Me)/(hvscape**2)
-        #print(fg)
         func = (G*ms*Me)/(hvscape**2)  - (ms*v**2)/hvscape  # 0.5*rho1*C*(A/ms)*(v)**2
         return func
     dh = 0.00001
@@ -197,15 +191,12 @@ while True:
         ### Vetor r
         rv = Satelite.pos - Terra.pos
         h = mag(rv) - Re
-        #print(h)
         vr = Satelite.p/Satelite.m
         if mag(vr)/310 <= 1: ### Velocidade menor que Mach 1
             C = 0.47
         if h <= 100:
             h = 0
             executar = False
-            #speed = 1*mag(vr)*norm(rv) + mag(vr)*norm(vr)
-            #break
         ### Forca sobre o satelite
         if h <= 11000: ### Troposfera
             ### Parametros de entrada
