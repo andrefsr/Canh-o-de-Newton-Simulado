@@ -3,6 +3,8 @@ O código foi feito totalmente no site da Glowscript através da ferramenta WebV
 
 https://glowscript.org/#/user/andre.fabiano/folder/ProjetoICF/program/CanhãoDeNewtonSimulado
 
+Ademais, recomendo rodar o código a partir do navegador Chrome. Testei ele em dois navegadores, no Chrome e no Opera, e em ambos funcionaram, porém o Opera apresentou alguns bugs visuais e a simulação não rodou tão lisa como no google Chrome.
+
 # Guia de usuário 
 Ao abrir o link disponibilizado acima, já é possível realizar a simulação, sem a necessidade de instalar qualquer biblioteca ou interpretador. Logo, para lançar o projétil, basta selecionar as condições iniciais (a partir dos sliders respectivos), como a velocidade inicial (0 a 10000m/s), a altura de lançamento (6000 a 47000m) e o ângulo (mudar o ângulo de lançamento antes da velocidade). Feito isso, ao clicar em 'Lançar' o projétil será lançado. Uma vez lançado, o código pode ser pausado a qualquer momento, apenas apertando o botão 'Pausar', e quando pausado, além da coleta de dados, é possível limpar a trajetória do projétil (só é possível limpar a trajetória quando o código estiver pausado).
 
